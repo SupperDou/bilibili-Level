@@ -26,7 +26,7 @@ class Exp:
         self.share(self.attention_aidList[1]['aid'])
         self.report(self.attention_aidList[1]['aid'],self.attention_aidList[1]['cid'],1000)
         # 投币(关注up主新视频和热门视频)
-        if self.money < 1:
+        if self.money < 9999:
             logger.info('硬币不足，终止投币')
             return
         for item in self.attention_aidList + self.popular_aidList:
