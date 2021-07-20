@@ -1,4 +1,4 @@
-import requests,json
+import requests,json,sys
 from log import Log
 from api import coinTodayExp,usernav,mangaSign,attentionVideo,popularVideo,liveSign,coinAdd,videoProgress,videoShare,silverNum,silver2coin
 from setting import bili_jct,coinnum,select_like,headers,SCKEY
