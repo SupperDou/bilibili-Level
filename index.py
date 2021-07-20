@@ -41,13 +41,13 @@ class Exp:
         try:
             res = requests.get(url=usernav,headers=headers)
             user_res = json.loads(res.text)['data']
-            print(user_res)
+#             print(user_res)
             money = user_res['money']
             uname = user_res['uname']
             self.uid = user_res['wallet']['mid']
             level_info = user_res['level_info']
             self.money = money
-            logger.info('用户昵称：' + uname)
+#             logger.info('用户昵称：' + uname)
             logger.info('硬币余额：' + str(money))
             logger.info('当前等级：{},当前经验：{},下一级所需经验：{}'.format(level_info['current_level'],level_info['current_exp'],level_info['next_exp']-level_info['current_exp']))
         except:
