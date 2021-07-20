@@ -18,7 +18,7 @@
 
 3. 点击Settings选项卡，点击左侧Secrets，点击New secret，创建名为`COOKIE`，值为。用同样方法，创建名为`SCKEY`，值为Server酱的SendKey值，具体获取方式请百度。这两个值不会被公开。
 
-   ![secrets](imgs/image-20200826215037042.png)
+   ![secrets](img/1.png)
 
 4. 默认的打卡时间是每天的每天8点，13点执行任务，可能会有数分钟的浮动。如需选择其它时间，可以修改`.github/workflows/report.yml`中的`cron`，详细说明参见[安排的事件](https://docs.github.com/cn/actions/reference/events-that-trigger-workflows#scheduled-events)，请注意这里使用的是**国际标准时间UTC**，北京时间的数值比它大8个小时。建议修改默认时间，避开打卡高峰期以提高成功率。
 
@@ -29,10 +29,11 @@
 
 ## 用户参数获取
 #### COOKIE
-F12 network -> 随便找个请求 -> 复制请求头cookie
+打开浏览器按F12 -> 点击network -> 从浏览器进入B站首页 -> 搜索nav复制请求头cookie所有内容
 
-![图示](docs/img/cookie.png)
+![图示](img/COOKIE.png)
 
 #### SCKEY
 `server酱`链接：`https://sct.ftqq.com/`
+![图示](img/SCKEY.png)
 
