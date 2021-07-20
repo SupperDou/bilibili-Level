@@ -1,3 +1,4 @@
+import sys
 # cookie
 """ 这里填cookie """
 myCookie = sys.argv[1]
