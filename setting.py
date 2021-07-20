@@ -1,6 +1,6 @@
 # cookie
 """ 这里填cookie """
-myCookie = ""
+myCookie = sys.argv[1]
 
 cookies = dict([l.split("=", 1) for l in myCookie.split("; ")])
 
@@ -10,7 +10,7 @@ SESSDATA = cookies['SESSDATA']
 DedeUserID = cookies['DedeUserID']
 
 # server酱
-SCKEY = ""
+SCKEY = sys.argv[1]
 # 每次投入硬币数量 1 或 2
 coinnum = 1
 # 投币时是否点赞
