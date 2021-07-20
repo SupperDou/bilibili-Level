@@ -6,7 +6,7 @@ myCookie = sys.argv[1]
 cookies = dict([l.split("=", 1) for l in myCookie.split("; ")])
 
 # 3个用户相关参数
-bili_jct = cookies['bili_jct']
+# bili_jct = cookies['bili_jct']
 SESSDATA = cookies['SESSDATA']
 DedeUserID = cookies['DedeUserID']
 
