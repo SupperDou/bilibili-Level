@@ -20,6 +20,6 @@ jobs:
       - name: Clock In
         env:
           COOKIE: ${{ secrets.COOKIE }}
-#           SCKEY: ${{ secrets.SCKEY }}
+          SCKEY: ${{ secrets.SCKEY }}
         run: |
-          python3 index.py ${COOKIE}
+          python3 index.py ${COOKIE} ${SCKEY}
