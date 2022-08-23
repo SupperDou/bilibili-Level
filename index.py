@@ -6,7 +6,7 @@ from setting import bili_jct,coinnum,select_like,headers,SCKEY
 # 日志
 logger = Log()
 # 通知到微信
-def sendmsgtowx(text='服务器挂掉啦~~',desp=''):
+def sendmsgtowx(text='饼干又过期了啦~~',desp=''):
     if SCKEY == '':
         logger.info('未配置推送微信')
         return
